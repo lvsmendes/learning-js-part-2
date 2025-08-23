@@ -43,6 +43,7 @@ const beefPorkChickenMeet = meetProcessor(1, 1, 1);
 console.log(beefPorkChickenMeet);
 */
 
+/*
 // Function declaration
 function calcAge1(birthYear) {
     return 2025 - birthYear;
@@ -57,3 +58,21 @@ const calcAge2 = function (birthYear){
 const age2 = calcAge2(2000);
 
 console.log( age1, age2);
+*/
+
+
+//Arrow function
+const calcAge3 = (birthYear) => 2025 - birthYear;
+const Age3 = calcAge3(2000);
+console.log(Age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2025 - birthYear
+    const retirement = 65 - age;
+    //return retirement;
+    return `${(firstName)} retires in ${retirement} years`;
+}
+
+yearsUntilRetirement(2000);
+console.log(yearsUntilRetirement(2000));
+console.log(yearsUntilRetirement(2000, 'lucas'));
