@@ -11,6 +11,7 @@ if (hasDriversLicense) console.log('i can drive');
 
 */
 
+/*
 function logger() {
     console.log('My name is lucas');
 }
@@ -40,3 +41,19 @@ function meetProcessor(beef, pork, chicken){
 
 const beefPorkChickenMeet = meetProcessor(1, 1, 1);
 console.log(beefPorkChickenMeet);
+*/
+
+// Function declaration
+function calcAge1(birthYear) {
+    return 2025 - birthYear;
+}
+const age1 =calcAge1(2000);
+
+
+//Function expression
+const calcAge2 = function (birthYear){
+    return 2025 - birthYear;
+}
+const age2 = calcAge2(2000);
+
+console.log( age1, age2);
